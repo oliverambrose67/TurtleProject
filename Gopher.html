@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endangered Turtles of Alabama: Gopher Tortoise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .slide {
+            display: none;
+        }
+        .slide.active {
+            display: block;
+        }
+        /* Simple fade transition */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-4 md:p-8">
+
+    <div class="w-full max-w-4xl bg-white rounded-2xl shadow-2xl overflow-hidden">
+        <!-- Presentation Slides Container -->
+        <div id="slides-container" class="relative">
+
+            <!-- Slide 1: Title -->
+            <div class="slide active fade-in p-8 md:p-12">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800">Gopher Tortoise</h1>
+                    <h2 class="text-2xl md:text-3xl font-light text-green-700 mt-2"><em>Gopherus polyphemus</em></h2>
+                    <p class="text-lg text-gray-600 mt-4">An Endangered Keystone Species in Alabama</p>
+                </div>
+                <div class="mt-8">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Gopherus_polyphemus_Tomfriedel.jpg" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/800x500/a3e635/14532d?text=Gopher+Tortoise';"
+                         alt="Gopher Tortoise" class="w-full h-auto max-h-96 object-cover rounded-xl shadow-lg">
+                    <p class="text-center text-sm text-gray-500 mt-2">A gopher tortoise emerging from its burrow.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2: About the Species -->
+            <div class="slide fade-in p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">About the Species</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    <div>
+                        <p class="text-gray-700 text-base leading-relaxed mb-4">The Gopher Tortoise is a keystone species, meaning over 350 other species benefit from the burrows it digs. These burrows can be up to 40 feet long and provide shelter from predators and extreme temperatures.</p>
+                        <p class="text-gray-700 text-base leading-relaxed mb-4">They are long-lived reptiles, with some living over 60 years in the wild. Their high-domed upper shell, or carapace, is typically dark brown to gray.</p>
+                        <p class="text-gray-700 text-base leading-relaxed">It is listed as Threatened under the Endangered Species Act primarily due to habitat loss and degradation of the longleaf pine ecosystem.</p>
+                    </div>
+                    <div class="flex justify-center">
+                         <img src="https://images.unsplash.com/photo-1581486981938-c65110d7a95a?q=80&w=2070&auto=format&fit=crop"
+                             onerror="this.onerror=null;this.src='https://placehold.co/400x400/a3e635/14532d?text=Habitat';"
+                             alt="Gopher Tortoise in its natural habitat" class="rounded-xl shadow-lg w-full max-w-sm">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Habitat & Range in Alabama -->
+            <div class="slide fade-in p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Habitat & Alabama Range</h2>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    <div>
+                        <p class="text-gray-700 text-base leading-relaxed mb-4">Gopher tortoises thrive in well-drained, sandy soils found in longleaf pine forests, sandhills, and coastal dunes. These soils are crucial for digging their extensive burrows.</p>
+                        <p class="text-gray-700 text-base leading-relaxed mb-4">An open canopy with abundant sunlight is essential, as it promotes the growth of low-lying herbaceous plants that make up the majority of their diet.</p>
+                        <p class="text-gray-700 text-base leading-relaxed">In Alabama, they are primarily found in the southern counties, especially south of the Black Belt region. Mobile, Baldwin, Washington, and Covington counties have significant populations.</p>
+                    </div>
+                     <div class="flex justify-center">
+                         <img src="https://live.staticflickr.com/5341/9525492425_86146c9cae_b.jpg"
+                             onerror="this.onerror=null;this.src='https://placehold.co/400x400/a3e635/14532d?text=Burrow';"
+                             alt="Entrance to a gopher tortoise burrow" class="rounded-xl shadow-lg w-full max-w-sm">
+                        <p class="text-center text-sm text-gray-500 mt-2">The sandy, half-moon shaped apron at a burrow entrance is a key indicator of an active burrow.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Nesting Habits -->
+            <div class="slide fade-in p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Nesting & Reproduction</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                     <div class="flex justify-center">
+                         <img src="https://live.staticflickr.com/8343/8227096956_f08d35fa7c_b.jpg"
+                             onerror="this.onerror=null;this.src='https://placehold.co/400x400/a3e635/14532d?text=Nest+with+Eggs';"
+                             alt="Gopher tortoise nest with eggs" class="rounded-xl shadow-lg w-full max-w-sm">
+                    </div>
+                    <div>
+                        <p class="text-gray-700 text-base leading-relaxed mb-4">Nesting occurs from May to July. The female digs a nest cavity in a sunny location, often in the sandy apron of her burrow.</p>
+                        <p class="text-gray-700 text-base leading-relaxed mb-4">She lays a clutch of about 5-8 brittle, white eggs that are roughly the size and shape of a ping-pong ball.</p>
+                        <p class="text-gray-700 text-base leading-relaxed">Incubation takes 80-110 days, and the hatchlings emerge in late summer or early fall. Nests and hatchlings are highly vulnerable to predators like raccoons, fire ants, and foxes.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 5: Locomotion & Footprints for AI Tracking -->
+            <div class="slide fade-in p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Locomotion & Tracking</h2>
+                <p class="text-gray-700 text-base leading-relaxed mb-6">Gopher tortoises move slowly but deliberately. Their front feet are spade-like and adapted for powerful digging, while their back feet are elephantine or club-like, providing stability. The tracks they leave in sandy soil are distinctive and can be used for population monitoring.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    <div class="text-center">
+                        <img src="https://www.gophertortoisecouncil.org/wp-content/uploads/2021/01/GT-Tracks-Burrow.jpg"
+                             onerror="this.onerror=null;this.src='https://placehold.co/400x300/a3e635/14532d?text=Footprints+in+Sand';"
+                             alt="Gopher tortoise footprints in sand" class="rounded-xl shadow-lg w-full">
+                        <p class="text-sm text-gray-600 mt-2">Distinctive tracks leading to a burrow. Notice the drag mark from the shell (plastron).</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://www.gophertortoisecouncil.org/wp-content/uploads/2021/01/GT-Tracks-3.jpg"
+                             onerror="this.onerror=null;this.src='https://placehold.co/400x300/a3e635/14532d?text=Close-up+of+Tracks';"
+                             alt="Close-up of gopher tortoise tracks" class="rounded-xl shadow-lg w-full">
+                        <p class="text-sm text-gray-600 mt-2">A closer view. The front feet leave a comma-shaped print, while the rear feet leave a rounder impression.</p>
+                    </div>
+                </div>
+                 <p class="text-gray-700 text-sm leading-relaxed mt-6"><strong>For your AI Model:</strong> Look for these key features: parallel sets of prints, a potential center line from the plastron dragging, and the half-moon shape of the burrow entrance nearby. The sandy soil provides an excellent medium for capturing clear images for training data.</p>
+            </div>
+
+            <!-- Slide 6: Resources -->
+            <div class="slide fade-in p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Additional Resources</h2>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-gray-700">Informational Links</h3>
+                    <ul class="list-disc list-inside text-blue-600 space-y-2">
+                        <li><a href="https://www.outdooralabama.com/reptiles/gopher-tortoise" target="_blank" class="hover:underline">Alabama Dept. of Conservation and Natural Resources</a></li>
+                        <li><a href="https://www.fws.gov/species/gopher-tortoise-gopherus-polyphemus" target="_blank" class="hover:underline">U.S. Fish & Wildlife Service - Species Profile</a></li>
+                        <li><a href="https://gophertortoisecouncil.org/" target="_blank" class="hover:underline">The Gopher Tortoise Council</a></li>
+                        <li><a href="https://www.nature.org/en-us/about-us/where-we-work/united-states/alabama/stories-in-alabama/gopher-tortoise/" target="_blank" class="hover:underline">The Nature Conservancy in Alabama</a></li>
+                    </ul>
+                    <h3 class="text-xl font-semibold text-gray-700 mt-6">Videos</h3>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe class="rounded-xl" src="https://www.youtube.com/embed/e-o202a9j7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="bg-gray-800 text-white p-4 flex justify-between items-center">
+            <button id="prevBtn" class="bg-gray-600 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                Previous
+            </button>
+            <div id="slide-counter" class="text-lg font-medium">
+                Slide 1 / 6
+            </div>
+            <button id="nextBtn" class="bg-green-700 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+                Next
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const slideCounter = document.getElementById('slide-counter');
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                // Remove active class from all slides
+                slides.forEach(slide => {
+                    slide.classList.remove('active');
+                });
+                // Add active class to the new current slide
+                slides[index].classList.add('active');
+                
+                // Update slide counter
+                slideCounter.textContent = `Slide ${index + 1} / ${slides.length}`;
+
+                // Update button states
+                prevBtn.disabled = index === 0;
+                nextBtn.disabled = index === slides.length - 1;
+            }
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            // Initialize the first slide and button states
+            showSlide(currentSlide);
+        });
+    </script>
+
+</body>
+</html>
