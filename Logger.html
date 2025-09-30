@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endangered Turtles of Alabama: Loggerhead Sea Turtle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .slide {
+            display: none;
+        }
+        .slide.active {
+            display: block;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 antialiased">
+
+    <div class="container mx-auto p-4 sm:p-8 max-w-4xl">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-teal-800">Endangered Turtle Species of Alabama</h1>
+            <p class="text-lg text-gray-600 mt-2">A Project by the High School AI Class</p>
+        </header>
+
+        <!-- Presentation Container -->
+        <main id="presentation-container" class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div id="slides-wrapper" class="relative p-6 sm:p-10">
+                <!-- Slide 1: Title -->
+                <div class="slide active fade-in" data-slide="1">
+                    <div class="text-center">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Loggerhead Sea Turtle</h2>
+                        <p class="text-xl text-teal-600 italic mt-2">Caretta caretta</p>
+                        <img src="https://marinelife.org/wp-content/uploads/2023/11/Loggerhead-Sea-Turtle.jpeg" alt="A majestic Loggerhead Sea Turtle swimming in the ocean" class="mt-6 rounded-lg shadow-md w-full max-w-lg mx-auto">
+                        <p class="text-sm text-gray-500 mt-4">The Loggerhead is named for its large head, which supports powerful jaw muscles, allowing it to crush hard-shelled prey like conchs and crabs.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Habitat & Range -->
+                <div class="slide fade-in" data-slide="2">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Habitat & Alabama Range</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                             <p class="mb-4">Loggerheads are found in temperate and tropical regions of the Atlantic, Pacific, and Indian Oceans. They inhabit a wide range of environments, from coastal bays and estuaries to the deep open ocean.</p>
+                            <h3 class="font-semibold text-teal-700 mb-2">In Alabama:</h3>
+                            <p>They are primarily found in the coastal waters of the Gulf of Mexico. Nesting sites are crucial and are located on Alabama's sandy beaches, particularly in Baldwin County and on the Fort Morgan Peninsula, including areas like the Bon Secour National Wildlife Refuge.</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1543312318-381c85d1e433?q=80&w=1974" onerror="this.onerror=null;this.src='https://placehold.co/600x400/028476/FFFFFF?text=Alabama+Coastline';" alt="Sandy beach habitat typical for Loggerhead nesting in Alabama" class="rounded-lg shadow-md object-cover h-full">
+                    </div>
+                </div>
+
+                <!-- Slide 3: Nesting Habits -->
+                <div class="slide fade-in" data-slide="3">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Nesting Habits</h2>
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <img src="https://images.unsplash.com/photo-1610883999997-d86b9a892b18?q=80&w=1943" onerror="this.onerror=null;this.src='https://placehold.co/600x400/028476/FFFFFF?text=Turtle+Nest';" alt="A protected sea turtle nest on a sandy beach, marked with stakes and tape." class="rounded-lg shadow-md object-cover h-full">
+                        <div>
+                            <p class="mb-4">Female Loggerheads return to the general areas where they were born to lay their own eggs. They typically nest at night, emerging from the ocean to dig a flask-shaped nest in the sand above the high-tide line.</p>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li><strong>Clutch Size:</strong> An average of 100-120 eggs per nest.</li>
+                                <li><strong>Frequency:</strong> A female may lay 3-5 nests (or more) in a single season, nesting every 2-4 years.</li>
+                                <li><strong>Incubation:</strong> Eggs incubate for about 60 days. The temperature of the sand determines the sex of the hatchlings!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Locomotion & Tracks -->
+                <div class="slide fade-in" data-slide="4">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Movement & Tracking</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                             <h3 class="font-semibold text-teal-700 mb-2">How They Move</h3>
+                            <p class="mb-4">In the water, Loggerheads use their long front flippers for powerful propulsion, resembling "flying" through the water. On land, they move much more laboriously, using an alternating limb movement to drag their heavy bodies across the sand. This creates a distinctive track pattern.</p>
+                            <h3 class="font-semibold text-teal-700 mb-2">Identifying Footprints</h3>
+                            <p>The tracks, often called a "crawl," are characterized by alternating comma-shaped marks from the flippers, with a drag mark from the tail (caruncle) down the center. The track width for an adult female is typically 2.5 to 3 feet.</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1594654955748-831e57a4128f?q=80&w=2070" onerror="this.onerror=null;this.src='https://placehold.co/600x400/028476/FFFFFF?text=Turtle+Tracks';" alt="Distinctive tracks of a Loggerhead Sea Turtle leading from the ocean to a nest site on the beach." class="rounded-lg shadow-md object-cover h-full">
+                    </div>
+                </div>
+                
+                <!-- Slide 5: Resources -->
+                <div class="slide fade-in" data-slide="5">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Learn More</h2>
+                    <p class="mb-6">Explore these resources to dive deeper into the world of Loggerhead Sea Turtles and conservation efforts in Alabama.</p>
+                    <div class="space-y-4">
+                        <a href="https://www.fisheries.noaa.gov/species/loggerhead-turtle" target="_blank" class="block bg-teal-50 hover:bg-teal-100 p-4 rounded-lg transition-colors duration-200">
+                            <h3 class="font-semibold text-teal-800">NOAA Fisheries: Loggerhead Turtle</h3>
+                            <p class="text-sm text-gray-600">Comprehensive species profile, including population status and conservation efforts.</p>
+                        </a>
+                        <a href="https://www.outdooralabama.com/sea-turtles/alabama-sea-turtles" target="_blank" class="block bg-teal-50 hover:bg-teal-100 p-4 rounded-lg transition-colors duration-200">
+                            <h3 class="font-semibold text-teal-800">Outdoor Alabama: Sea Turtles</h3>
+                            <p class="text-sm text-gray-600">Information specific to sea turtle conservation and monitoring programs in Alabama.</p>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=y2Qp_N-b5xM" target="_blank" class="block bg-teal-50 hover:bg-teal-100 p-4 rounded-lg transition-colors duration-200">
+                            <h3 class="font-semibold text-teal-800">Video: Alabama Sea Turtle Nesting</h3>
+                            <p class="text-sm text-gray-600">Watch a video showcasing the conservation work being done right on Alabama's beaches.</p>
+                        </a>
+                         <a href="https://www.youtube.com/watch?v=Ew1654d0oDA" target="_blank" class="block bg-teal-50 hover:bg-teal-100 p-4 rounded-lg transition-colors duration-200">
+                            <h3 class="font-semibold text-teal-800">Video: Loggerhead Hatchlings Journey</h3>
+                            <p class="text-sm text-gray-600">See the incredible journey of hatchlings from the nest to the sea.</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Navigation -->
+            <footer class="bg-gray-50 border-t p-4 flex justify-between items-center">
+                <button id="prevBtn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-lg transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed">Previous</button>
+                <div id="slide-counter" class="text-sm text-gray-600">Slide 1 / 5</div>
+                <button id="nextBtn" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200">Next</button>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const slideCounter = document.getElementById('slide-counter');
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove('active');
+                    if (i === index) {
+                        slide.classList.add('active');
+                    }
+                });
+                updateCounter();
+                updateNavButtons();
+            }
+
+            function updateCounter() {
+                slideCounter.textContent = `Slide ${currentSlide + 1} / ${totalSlides}`;
+            }
+
+            function updateNavButtons() {
+                prevBtn.disabled = currentSlide === 0;
+                nextBtn.disabled = currentSlide === totalSlides - 1;
+            }
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < totalSlides - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            // Initialize first slide
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>
