@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alabama Red-bellied Turtle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .slide-container {
+            perspective: 1000px;
+        }
+        .slide {
+            backface-visibility: hidden;
+            transition: transform 0.6s, opacity 0.6s;
+            transform-style: preserve-3d;
+        }
+        .slide.active {
+            transform: rotateY(0) scale(1);
+            opacity: 1;
+            z-index: 2;
+            position: relative;
+        }
+        .slide.inactive-next {
+            transform: rotateY(-180deg) scale(0.8);
+            opacity: 0;
+            z-index: 1;
+            position: absolute;
+        }
+        .slide.inactive-prev {
+            transform: rotateY(180deg) scale(0.8);
+            opacity: 0;
+            z-index: 1;
+            position: absolute;
+        }
+        .nav-button {
+            transition: all 0.3s ease;
+        }
+        .nav-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-4xl mx-auto">
+        <div id="presentation-container" class="slide-container relative bg-white rounded-2xl shadow-lg overflow-hidden" style="min-height: 600px;">
+
+            <!-- Slide 1: Title -->
+            <div id="slide-1" class="slide active p-8 md:p-12 flex flex-col items-center justify-center text-center">
+                <div class="w-full">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Endangered Turtles of Alabama</h1>
+                    <p class="text-2xl md:text-3xl text-red-600 font-semibold mb-6">Alabama Red-bellied Turtle</p>
+                    <p class="text-lg text-gray-600 mb-4">(<em>Pseudemys alabamensis</em>)</p>
+                    <img src="https://www.outdooralabama.com/sites/default/files/Species/Reptiles/ARB%20Turtle%20Pic%202.JPG" alt="Alabama Red-bellied Turtle" class="w-full max-w-md mx-auto rounded-lg shadow-md my-6">
+                    <p class="text-sm text-gray-500 italic">Photo: Outdoor Alabama</p>
+                </div>
+            </div>
+
+            <!-- Slide 2: About the Species -->
+            <div id="slide-2" class="slide inactive-next p-8 md:p-12 w-full h-full">
+                 <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">About the Species</h2>
+                 <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="md:w-1/2">
+                        <img src="https://www.researchgate.net/profile/James-Styring/publication/312002364/figure/fig1/AS:454911762145281@1485470530752/Adult-female-Alabama-Red-bellied-Cooter-Pseudemys-alabamensis-from-the-Mobile-Tensaw.png" alt="Close up of an Alabama Red-bellied Turtle" class="w-full rounded-lg shadow-md">
+                        <p class="text-xs text-gray-500 italic mt-2 text-center">A close look at the distinctive head stripes.</p>
+                    </div>
+                    <div class="md:w-1/2 text-gray-700 space-y-4">
+                        <p>The Alabama Red-bellied Turtle is a large, freshwater turtle and is designated as Alabama's state reptile. It was listed as endangered in 1987 due to a small and declining population.</p>
+                        <p><strong>Key Features:</strong></p>
+                        <ul class="list-disc list-inside space-y-2 pl-4">
+                            <li><strong>Carapace (Top Shell):</strong> Dark, olive-green to black with reddish or yellowish vertical markings on the sides.</li>
+                            <li><strong>Plastron (Bottom Shell):</strong> Typically reddish or orange, giving the turtle its name.</li>
+                            <li><strong>Head:</strong> Marked with prominent yellow or light-colored stripes.</li>
+                            <li><strong>Size:</strong> Females are larger, with shells reaching up to 15 inches in length.</li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+
+            <!-- Slide 3: Habitat & Distribution -->
+            <div id="slide-3" class="slide inactive-next p-8 md:p-12 w-full h-full">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Habitat & Distribution</h2>
+                 <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
+                    <div class="md:w-1/2">
+                        <img src="https://live.staticflickr.com/4054/4532889260_69f53e6704_b.jpg" alt="Mobile-Tensaw River Delta" class="w-full rounded-lg shadow-md">
+                         <p class="text-xs text-gray-500 italic mt-2 text-center">The Mobile-Tensaw River Delta, primary habitat for the turtle.</p>
+                    </div>
+                    <div class="md:w-1/2 text-gray-700 space-y-4">
+                        <p>This turtle has one of the smallest ranges of any turtle in North America.</p>
+                        <p><strong>Habitat:</strong> They prefer freshwater rivers, streams, and reservoirs with soft bottoms, abundant aquatic vegetation for food, and plenty of logs or snags for basking in the sun.</p>
+                        <p><strong>Location in Alabama:</strong> They are found almost exclusively in the fresh and brackish waters of the Mobile-Tensaw River Delta in Mobile and Baldwin counties. Their range is mostly confined to the lower parts of the Mobile and Tensaw rivers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Nesting & Movement -->
+            <div id="slide-4" class="slide inactive-next p-8 md:p-12 w-full h-full">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Nesting & Locomotion</h2>
+                 <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="md:w-1/2">
+                         <img src="https://images.fineartamerica.com/images-medium-large-5/turtle-tracks-in-the-sand-joyce-pankow.jpg" alt="Turtle tracks in sand" class="w-full rounded-lg shadow-md mb-4">
+                        <p class="text-xs text-gray-500 italic mt-2 text-center">Example of turtle tracks leading from a nesting site.</p>
+                        <img src="https://www.nps.gov/caco/learn/nature/images/Turtle-track_1.jpg" alt="Turtle footprints diagram" class="w-full rounded-lg shadow-md">
+                        <p class="text-xs text-gray-500 italic mt-2 text-center">Diagram of typical turtle footprints, showing alternating limb movement.</p>
+                    </div>
+                    <div class="md:w-1/2 text-gray-700 space-y-4">
+                        <p><strong>Nesting Habits:</strong></p>
+                        <ul class="list-disc list-inside space-y-2 pl-4">
+                           <li>Nesting occurs from May through July.</li>
+                           <li>Females leave the water to find open, sandy, and well-drained areas exposed to direct sunlight.</li>
+                           <li>They dig a nest with their hind feet and lay a clutch of 4 to 9 eggs.</li>
+                           <li>A significant threat is nest predation by animals like fire ants, raccoons, and fish crows.</li>
+                        </ul>
+                        <p><strong>Locomotion (Movement):</strong></p>
+                         <ul class="list-disc list-inside space-y-2 pl-4">
+                            <li><strong>In Water:</strong> They are powerful swimmers, using their webbed feet for propulsion.</li>
+                            <li><strong>On Land:</strong> Movement is slow and deliberate. They walk in a "diagonal" pattern, moving opposite limbs (e.g., front right and rear left) at the same time. This creates a distinct track pattern in soft soil or sand.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 5: Resources -->
+            <div id="slide-5" class="slide inactive-next p-8 md:p-12 w-full h-full">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Learn More</h2>
+                <div class="space-y-6 text-lg text-gray-700">
+                    <p>Explore these resources for more in-depth information and videos about the Alabama Red-bellied Turtle.</p>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Helpful Links:</h3>
+                        <ul class="list-disc list-inside space-y-2 pl-4">
+                            <li><a href="https://www.outdooralabama.com/turtles/alabama-red-bellied-turtle" target="_blank" class="text-blue-600 hover:underline">Outdoor Alabama - Detailed species profile.</a></li>
+                            <li><a href="https://www.fws.gov/species/alabama-red-bellied-turtle-pseudemys-alabamensis" target="_blank" class="text-blue-600 hover:underline">U.S. Fish & Wildlife Service - Federal status and information.</a></li>
+                            <li><a href="https://www.nature.org/en-us/about-us/where-we-work/united-states/alabama/stories-in-alabama/alabama-red-bellied-turtle/" target="_blank" class="text-blue-600 hover:underline">The Nature Conservancy in Alabama - Conservation efforts.</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Videos:</h3>
+                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="aspect-w-16 aspect-h-9">
+                                <iframe src="https://www.youtube.com/embed/5yRGI88aWJ4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="rounded-lg shadow-md w-full h-full"></iframe>
+                                <p class="text-sm text-center mt-2">Alabama Red Bellied Turtle | Alabama Safari Park</p>
+                            </div>
+                            <div class="aspect-w-16 aspect-h-9">
+                                <iframe src="https://www.youtube.com/embed/eYKk5g6atS4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="rounded-lg shadow-md w-full h-full"></iframe>
+                                <p class="text-sm text-center mt-2">Alabama Red-bellied Cooter | US Fish and Wildlife Service</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex justify-between items-center mt-6">
+            <button id="prev-btn" class="nav-button bg-red-600 text-white font-bold py-2 px-6 rounded-lg shadow-md hover:bg-red-700 disabled:bg-gray-400 disabled:cursor-not-allowed">
+                Previous
+            </button>
+            <div id="slide-indicator" class="text-gray-600">
+                Slide 1 / 5
+            </div>
+            <button id="next-btn" class="nav-button bg-red-600 text-white font-bold py-2 px-6 rounded-lg shadow-md hover:bg-red-700 disabled:bg-gray-400 disabled:cursor-not-allowed">
+                Next
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const nextBtn = document.getElementById('next-btn');
+            const prevBtn = document.getElementById('prev-btn');
+            const slideIndicator = document.getElementById('slide-indicator');
+            let currentSlide = 0;
+
+            function updateSlides() {
+                slides.forEach((slide, index) => {
+                    slide.classList.remove('active', 'inactive-prev', 'inactive-next');
+                    if (index === currentSlide) {
+                        slide.classList.add('active');
+                    } else if (index < currentSlide) {
+                         slide.classList.add('inactive-prev');
+                    } else {
+                         slide.classList.add('inactive-next');
+                    }
+                });
+                slideIndicator.textContent = `Slide ${currentSlide + 1} / ${slides.length}`;
+                prevBtn.disabled = currentSlide === 0;
+                nextBtn.disabled = currentSlide === slides.length - 1;
+            }
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                    updateSlides();
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    updateSlides();
+                }
+            });
+
+            // Initialize
+            updateSlides();
+        });
+    </script>
+</body>
+</html>
